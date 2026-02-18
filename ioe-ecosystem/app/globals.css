@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #09090b; /* Abyss Dark 950 */
+  --foreground: #ededed;
+  
+  --font-inter: 'Inter', sans-serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass-panel {
+    @apply bg-abyss-900/50 backdrop-blur-md border border-white/5 shadow-xl;
+  }
+  
+  .neo-brutalism-border {
+    @apply border border-white/10 hover:border-usdc-DEFAULT transition-colors duration-300;
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 10px rgba(0, 227, 255, 0.5);
+  }
+}
