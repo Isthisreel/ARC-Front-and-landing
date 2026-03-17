@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # Enable version updates for npm (ioe-ecosystem frontend)
+  - package-ecosystem: "npm"
+    directory: "/ioe-ecosystem"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "security"
